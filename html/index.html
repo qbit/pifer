@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pifer</title>
+    </head>
+    <body>
+        <div id="status">0 F</div>
+        <script>
+            var ws = new WebSocket("ws://" _+ window.location.hostname + ":8765/");
+            var ts = document.getElementById("status");
+            ws.onmessage = function (event) {
+            	ts.innerText = event.data + " F";
+            };
+            console.log(ws.send("hi"));
+        </script>
+    </body>
+</html>
