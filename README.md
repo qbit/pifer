@@ -1,6 +1,6 @@
 # pifer
 
-Dump thermistor data to a websocket / webpage
+Dump thermocouple data to a websocket / webpage
 
 ## Installing
 
